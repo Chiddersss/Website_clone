@@ -1,0 +1,328 @@
+/* Style the header with a grey background and some padding */
+
+body {
+  margin: 0;
+  background-color: rgb(23,23,23);
+}
+
+.header {
+    overflow: hidden;
+    background-color: rgb(30,30,34);
+    padding: 20px 10px;
+  }
+
+  /* Logo not inline */
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: whitesmoke;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .header a:hover {
+   transform: scale(1.1);
+   cursor: pointer;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+    
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+
+  .header input[type=text] {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    height: var(--search-input-height);
+    width: 100%;
+    flex-grow: 1;
+    background: #2b2b2f;
+    border: 2px solid #2b2b2f;
+    border-radius: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+    outline: none;
+    box-shadow: none;
+    padding: 8px 8px 8px 32px;
+    color: #e6e6ea;
+    box-sizing: border-box!important;
+    transition: border .15s linear;
+  }
+  
+ /* needs text overlay */
+
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+  .artstationlogo {
+    display: flex;
+    justify-content: start;
+    float: left;
+    width: 100px;
+    height: 90px;
+    top: 0;
+
+    
+  }
+
+  .top-row-hover {
+    font-size: 13px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+
+  }
+
+  #new_tales_from_borderlands {
+    scale: 90%;
+    border-radius: 10px;
+    opacity: 65%;
+  }
+
+  #new_tales_from_borderlands {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color:#ddd;
+    text-align: center;
+    z-index: 2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+
+  .text-overlayp {
+    position: absolute;
+    top: 37%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: rgb(150,150,154);
+    text-align: center;
+    z-index: 2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+
+  #visual_design_assets_with_twinmotion {
+    scale: 90%;
+    border-radius: 10px;;
+    opacity: 65%;
+  }
+
+  #visual_design_assets_with_twinmotion {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+
+  .text-overlay2 {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color:#ddd;
+    text-align: center;
+    z-index: 2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+
+  .text-overlayp2 {
+    position: absolute;
+    top: 37%;
+    left: 44.6%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color:rgb(150,150,154);
+    text-align: center;
+    z-index: 2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+
+  .text-overlay3 {
+    position: absolute;
+    top: 35%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color:#ddd;
+    text-align: center;
+    z-index: 2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .text-overlayp3 {
+    position: absolute;
+    top: 37%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color:rgb(150,150,154);
+    text-align: center;
+    z-index: 2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  /* only hover that works? */
+  #gotham-knights {
+    scale: 90%;
+    border-radius: 10px;
+    opacity: 60%;
+  }
+
+  #gotham-knights:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+
+
+  /* #top-row-hover a {
+    transition: transform 0.5s ease;
+  } */
+
+  /* .top-row-hover:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  } */
+
+  .grid-container {
+    column-count: 6;
+    column-gap: 0px;
+    width: 3000px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .gallery-grid {
+    grid-auto-columns: (1, 1fr);
+    grid-auto-flow: column;
+    /* transform: scale(0.7); */
+  }
+
+  .gallery-grid-overlay {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+
+  }
+
+  .gallery-grid-overlay2 {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+  }
+
+  .gallery-grid-overlay3 {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+  }
+
+  .gallery-grid-overlay4 {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+
+  }
+
+  .gallery-grid-overlay5 {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+  }
+
+  .gallery-grid-overlay6 {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+
+  }
+
+  .gallery-grid-overlay7 {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+
+  }
+
+  .gallery-grid-overlay8 {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    grid-template-columns: 400px;
+
+  }
+
+  .gallery-grid-overlay9 {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+  }
+
+  .gallery-grid-overlay10 {
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+  }
+/* .body {
+  background-image: linear-gradient(blue, violet);
+} */
+
+/* .head {
+  background-color: #1e1e22;
+}
+
+
+
+.explorenav {
+    display: inline;
+
+} */
+
+.gallery-grid-overlay2 {
+    /* width: 60vw; */
+    display: flex;
+    /* margin: 5%; */
+    /* background-color: #000; */
+} .flex { display: flex; } .flex-horizontal-center { justify-content: center; }
+
+/* creating a second column */
